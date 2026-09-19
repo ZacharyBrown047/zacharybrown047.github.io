@@ -1,1 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zachary Brown — Portfolio</title>
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --text: #1a1a1a;
+    --muted: #5c5c5c;
+    --accent: #2b4c3f;
+    --line: #dedad3;
+    --max-width: 720px;
+    --font-body: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+    --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
 
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    font-size: 18px;
+  }
+
+  .wrap {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 5rem 1.5rem 6rem;
+  }
+
+  /* ---------- Header ---------- */
+  header {
+    margin-bottom: 4rem;
+  }
+
+  header h1 {
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin: 0 0 0.3rem;
+    letter-spacing: -0.01em;
+  }
+
+  header p.role {
+    font-family: var(--font-ui);
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0 0 1.5rem;
+  }
+
+  header p.bio {
+    max-width: 60ch;
+    margin: 0;
+  }
+
+  /* ---------- Contact row ---------- */
+  .contact {
+    font-family: var(--font-ui);
+    font-size: 0.95rem;
+    margin-top: 1.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+
+  .contact a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+  }
+
+  .contact a:hover,
+  .contact a:focus-visible {
+    border-bottom-color: var(--accent);
+  }
+
+  /* ---------- Section headings ---------- */
+  section { margin-bottom: 3.5rem; }
+
+  section h2 {
+    font-family: var(--font-ui);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin: 0 0 1.5rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  /* ---------- Projects ---------- */
+  .project {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .project:last-child { border-bottom: none; }
+
+  .project h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0 0 0.4rem;
+  }
+
+  .project h3 a {
+    color: var(--text);
+    text-decoration: none;
+  }
+
+  .project h3 a:hover,
+  .project h3 a:focus-visible {
+    color: var(--accent);
+  }
+
+  .project p {
+    margin: 0 0 0.5rem;
+    color: var(--text);
+  }
+
+  .project .meta {
+    font-family: var(--font-ui);
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  /* ---------- Skills ---------- */
+  .skills {
+    font-family: var(--font-ui);
+    font-size: 0.95rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 0.8rem;
+    color: var(--muted);
+  }
+
+  /* ---------- Resume button ---------- */
+  .resume-btn {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: 0.95rem;
+    color: var(--bg);
+    background: var(--accent);
+    padding: 0.7rem 1.3rem;
+    border-radius: 3px;
+    text-decoration: none;
+  }
+
+  .resume-btn:hover,
+  .resume-btn:focus-visible {
+    opacity: 0.9;
+  }
+
+  /* ---------- Footer ---------- */
+  footer {
+    font-family: var(--font-ui);
+    font-size: 0.85rem;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding-top: 1.5rem;
+  }
+
+  /* ---------- Accessibility ---------- */
+  a:focus-visible, .resume-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; }
+  }
+
+  /* ---------- Mobile ---------- */
+  @media (max-width: 600px) {
+    body { font-size: 16.5px; }
+    .wrap { padding: 3rem 1.25rem 4rem; }
+    header h1 { font-size: 2.1rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- ===================== HEADER ===================== -->
+  <header>
+    <h1>Zachary Brown</h1>
+    <p class="role">[Your Title — e.g. Frontend Developer / Data Analyst]</p>
+    <p class="bio">
+      [Write 2–3 sentences about who you are, what you do, and what you're
+      looking for. Keep it plain and specific — skip the buzzwords.]
+    </p>
+
+    <div class="contact">
+      <a href="/resume.pdf" class="resume-btn">Download Résumé</a>
+      <a href="mailto:zachary.brown047@gmail.com">zachary.brown047@gmail.com</a>
+      <a href="mailto:zbrown16@calpoly.edu">zbrown16@calpoly.edu</a>
+      <a href="https://linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3><a href="https://your-project-link.com" target="_blank" rel="noopener">[Project Name]</a></h3>
+      <p>[One to two sentences on what it does and the problem it solves.]</p>
+      <p class="meta">[Tech stack, e.g. React · Node · PostgreSQL]</p>
+    </div>
+
+    <div class="project">
+      <h3><a href="https://your-project-link.com" target="_blank" rel="noopener">[Project Name]</a></h3>
+      <p>[One to two sentences on what it does and the problem it solves.]</p>
+      <p class="meta">[Tech stack]</p>
+    </div>
+
+    <div class="project">
+      <h3><a href="https://your-project-link.com" target="_blank" rel="noopener">[Project Name]</a></h3>
+      <p>[One to two sentences on what it does and the problem it solves.]</p>
+      <p class="meta">[Tech stack]</p>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>[Skill 1]</span> ·
+      <span>[Skill 2]</span> ·
+      <span>[Skill 3]</span> ·
+      <span>[Skill 4]</span> ·
+      <span>[Skill 5]</span> ·
+      <span>[Skill 6]</span>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    © Zachary Brown. Built with GitHub Pages.
+  </footer>
+
+</div>
+
+</body>
+</html>
