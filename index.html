@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zachary Brown</title>
+<meta name="description" content="Electrical Engineering student at Cal Poly San Luis Obispo.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1c1f24;
+    --muted: #5b6470;
+    --line: #dfe3e8;
+    --accent: #1f4e79;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171c;
+      --text: #eceff3;
+      --muted: #a2abb7;
+      --line: #2b313a;
+      --accent: #8db8e6;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 64px 24px 32px;
+    text-align: center;
+  }
+  .headshot {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    margin-bottom: 24px;
+  }
+  h1 { font-size: 2.6rem; line-height: 1.15; margin: 0 0 12px; font-weight: 700; }
+  .school { font-size: 1.15rem; font-weight: 700; margin: 0; }
+  .details { color: var(--muted); margin: 4px 0 0; }
+  .summary { margin: 28px auto 0; max-width: 34em; text-align: left; }
+  .contact { list-style: none; padding: 0; margin: 32px 0 0; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: center; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .buttons { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 36px; }
+  .button {
+    display: inline-block;
+    padding: 12px 22px;
+    background: var(--text);
+    color: var(--bg);
+    text-decoration: none;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-weight: 600;
+    border-radius: 6px;
+  }
+  .button:hover { opacity: 0.85; }
+  .button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  footer { text-align: center; color: var(--muted); font-size: 0.85rem; padding: 32px 24px 48px; }
+</style>
+</head>
+<body>
+<main>
+  <img class="headshot" src="headshot.jpg" alt="Portrait of Zachary Brown">
+  <h1>Zachary Brown</h1>
+  <p class="school">Student at <em>California Polytechnic State University – San Luis Obispo</em></p>
+  <p class="details">B.S. in Electrical Engineering, Minor in Mathematics</p>
+  <p class="details">Class of 2030, Honors Program, GPA: 4.0</p>
+
+  <p class="summary">Hands-on experience in hardware design, rapid prototyping, and technical project management. Proven track record leading multidisciplinary teams through competitive, research-driven engineering programs, with a focus on turning ideas into working physical builds.</p>
+
+  <ul class="contact">
+    <li><a href="mailto:zachary.brown047@gmail.com">zachary.brown047@gmail.com</a></li>
+    <li><a href="mailto:zbrown16@calpoly.edu">zbrown16@calpoly.edu</a></li>
+    <li><a href="https://www.linkedin.com/in/zachary-brown-33022833b/" target="_blank" rel="noopener">LinkedIn</a></li>
+  </ul>
+
+  <div class="buttons">
+    <a class="button" target="_blank" rel="noopener" href="https://cpslo-my.sharepoint.com/:b:/g/personal/zbrown16_calpoly_edu/IQAdRN9Vf2JQSaeaDPq8vZCWAasKoBn4sOtFmYAqCOm-4M0?e=xKH5OI">View/Download Portfolio</a>
+    <a class="button" target="_blank" rel="noopener" href="https://cpslo-my.sharepoint.com/:b:/g/personal/zbrown16_calpoly_edu/IQDDOqHpUoE9SpRwWZoMnySsARTttEtwgDy1xg0uU68SofA?e=KDdsag">View/Download Résumé</a>
+  </div>
+</main>
+<footer>© Zachary Brown 2026. Built with GitHub Pages.</footer>
+</body>
+</html>
